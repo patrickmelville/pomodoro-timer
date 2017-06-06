@@ -1,0 +1,153 @@
+body {
+  background-color: #222222;
+  color: #bbb;
+  font-family: 'Roboto Condensed', sans-serif;
+  
+}
+
+header {
+  text-align: center;
+}
+
+main {}
+h1{
+  font-family: 'Lobster', cursive;
+  font-size: 82px;
+}
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size:40px;
+  line-height:20px;
+  padding:0px;margin-top:25px;
+}
+
+
+/* control area positioning */
+
+#controls {
+  margin: 0px auto;
+  /*   background-color: #555; */
+  width: 600px;
+  /*   font-size: px; */
+}
+
+
+/* control buttons */
+
+#controls a {
+  font-size: 50px;
+  line-height: 45px;
+  text-decoration: none;
+  border: 2px #bbb solid;
+  border-radius: 50%;
+  background-color: #333;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  color: #00B9BD;
+}
+
+#controls a:hover {
+  color: #FB6900;
+  background-color: #404040;
+}
+
+
+/* link character vertical adjustments */
+
+#controls a:nth-child(4) {
+  line-height: 50px;
+  position: relative;
+  top: 2px;
+}
+
+
+/* Control Digits */
+
+#controls span {
+  font-size: 50px;
+  margin: 0px 15px;
+}
+
+
+/* session length control area */
+
+.session {
+  float: left;
+  border: 2px #bbb solid;
+  width: 292px;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+
+/* break length control area */
+
+.break {
+  float: left;
+  border: 2px #bbb solid;
+  width: 292px;
+  text-align: center;
+  margin: 0px 0px 16px 16px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+
+/* container area for the colored bars and digits */
+
+.clock {
+  clear: both;
+  position: relative;
+  /*   background-color:#000; */
+  border: 2px #bbb solid;
+  width: 600px;
+  height: 100px;
+  margin: 15px auto;
+  text-align: center;
+  line-height: 100px;
+  font-size: 60px;
+}
+
+
+/* creation of the physical bars */
+
+.bar {
+  position: absolute;
+  z-index: 0;
+  top: 15px;
+  left: 15px;
+  /*   right:15px; */
+  bottom: 15px;
+}
+
+
+/* The colored bars for each timer */
+
+#session-bar {
+  background-color: #00B9BD;
+  width: 95%;
+}
+
+#break-bar {
+  background-color: #FB6900;
+  width: 95%;
+}
+
+
+/* positioning and coloring of the timer digits */
+
+.timer {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+footer {
+  text-align: center;
+}

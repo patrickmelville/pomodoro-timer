@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>A Pomodoro Clock</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <header class="container-fluid">
+  <h1>A Pomodoro Clock</h1>
+</header>
+
+<main class="container-fluid">
+  <div id="controls">
+    <div class="session">
+      <h2>Session Length</h2>
+      <a href="#" id="session-minus">-</a>
+      <span id="session-length">25</span>
+      <a href="#" id="session-plus">+</a>
+    </div>
+    <div class="break">
+      <h2>Break Length</h2>
+      <a href="#" id="break-minus">-</a>
+      <span id="break-length">5</span>
+      <a href="#" id="break-plus">+</a>
+    </div>
+    <div class="session" id="start"><h3>Start</h3></div>
+    <div class="break" id="pause"><h3>Pause</h3></div>
+  </div>
+  
+  <div class="clock" id="session-clock">
+    <div class="bar" id="session-bar"></div>
+    <span class="timer" id="session-digits">LOADING...</span>
+  </div>
+  <div class="clock" id="break-clock">
+    <div class="bar" id="break-bar"></div>
+    <span class="timer" id="break-digits">LOADING...</span>
+  </div>
+</main>
+
+<footer class="container-fluid">
+  by Patrick M.
+</footer>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
